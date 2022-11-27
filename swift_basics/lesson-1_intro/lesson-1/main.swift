@@ -11,11 +11,11 @@ let x1: Double
 let x2: Double
 let D: Double = b*b - 4 * a * c
 print(D)
-if(D > 0){
+if(D > 0) {
     x1 = -b + sqrt(D) / (2 * a)
     x2 = -b - sqrt(D) / (2 * a)
     print("2 корня \(x1), \(x2)")
-}else if (D==0) {
+} else if (D==0) {
     x1 = -b + sqrt(D) / (2 * a)
     print("1 корень \(x1)")
 } else {
