@@ -16,6 +16,7 @@ func isEvenNumber(numEx number: Int) -> Bool {
     return false
 }
 
+
 print(isEvenNumber(numEx: 5))
 print(isEvenNumber(numEx: 10))
 print("============")
