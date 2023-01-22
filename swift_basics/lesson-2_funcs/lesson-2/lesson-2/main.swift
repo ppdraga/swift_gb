@@ -9,6 +9,36 @@ import Foundation
 
 //print("Hello, World!")
 
+// Ternary operator
+let a = 7
+let b = a != 7 ? "yes" : "no"
+print(b)
+
+// For with stride
+for i in stride(from: 0, to: 5, by: 2) {
+    print(i)
+}
+
+// array with 10 elements
+var testArray: [Int] = []
+for i in 0...9 {
+    testArray.append(i)
+}
+print(testArray)
+
+// enumerated example
+for (index, value) in testArray.enumerated() {
+    print(index, value)
+}
+
+// Remove all odd elements from the array
+for value in testArray {
+    if (value % 2) != 0 {
+        testArray.remove(at: testArray.firstIndex(of: value)!)
+    }
+}
+print(testArray)
+
 func isEvenNumber(numEx number: Int) -> Bool {
     if number % 2 == 0 {
         return true
